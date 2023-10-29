@@ -1,0 +1,112 @@
+[gd_scene load_steps=4 format=3 uid="uid://cp2vodvxqbcnb"]
+
+[ext_resource type="PackedScene" uid="uid://d3tmfx7jgvken" path="res://world.tscn" id="1_8qsjy"]
+[ext_resource type="PackedScene" uid="uid://d4f48m1je2sox" path="res://spikes.tscn" id="2_n0iaj"]
+[ext_resource type="PackedScene" uid="uid://cuhb2ft7y4fm5" path="res://heart.tscn" id="3_mw011"]
+
+[node name="LevelTwo" instance=ExtResource("1_8qsjy")]
+
+[node name="Player" parent="." index="0"]
+position = Vector2(0, -8)
+
+[node name="LevelTileMap" parent="." index="2"]
+layer_0/tile_data = PackedInt32Array(-4, 0, 1, -3, 327680, 2, -2, 65536, 0, -1, 65536, 0, -65536, 65536, 0, -65535, 65536, 0, -65533, 65536, 0, -65534, 65536, 0, -65532, 131072, 0, 3, 393216, 1, 4, 131072, 1, 65532, 0, 2, 65533, 65536, 2, 65534, 65536, 2, 65535, 65536, 2, 0, 65536, 2, 1, 65536, 2, 2, 65536, 2, -65539, 131072, 1, -131075, 131072, 1, -196611, 131072, 1, -262147, 131072, 1, -327683, 131072, 1, -393219, 131072, 1, -458755, 131072, 1, -524291, 131072, 0, -524292, 0, 0, -458756, 0, 1, -393220, 0, 1, -327684, 0, 1, -262148, 0, 1, -196612, 0, 1, -131076, 0, 1, -65540, 0, 1, -262143, 0, 3, -262142, 65536, 3, -262141, 131072, 3, -262137, 0, 3, -262136, 65536, 3, -262135, 131072, 3, 65540, 327680, 2, 131076, 65536, 2, 65541, 65536, 0, 65542, 65536, 0, 65543, 65536, 0, 65544, 65536, 0, 65545, 65536, 0, 131077, 65536, 2, 131078, 65536, 2, 131079, 65536, 2, 131080, 65536, 2, 131081, 65536, 2, 131082, 65536, 2, 131083, 65536, 2, 65546, 65536, 0, 65547, 65536, 0, 65539, 0, 1, 131075, 0, 2, 65548, 65536, 0, 65549, 393216, 2, 131084, 65536, 2, 131085, 65536, 2, 131086, 65536, 2, 65550, 65536, 1, 13, 0, 1, -65523, 0, 1, -131059, 0, 1, -196595, 0, 0, -196594, 65536, 0, -196593, 131072, 0, -131057, 131072, 1, -65521, 131072, 1, 15, 131072, 1, 65551, 131072, 1, 131087, 327680, 3, 14, 65536, 1, -65522, 65536, 1, -131058, 65536, 1, 131088, 65536, 3, 131089, 65536, 3, 131090, 65536, 3, 131091, 65536, 3, -196587, 0, 3, -196586, 65536, 3, -196585, 65536, 3, -196584, 65536, 3, -196583, 131072, 3, 131092, 65536, 3, 131093, 65536, 3, 131094, 65536, 3, 131095, 65536, 3, 131096, 65536, 3, 131097, 65536, 3, 131098, 65536, 3, 131099, 65536, 3, 131100, 65536, 3, 23, 0, 3, 24, 65536, 3, 25, 131072, 3, 28, 0, 3, 29, 65536, 3, 30, 131072, 3, 131101, 65536, 3, 131102, 65536, 3, 131103, 65536, 3, 131104, 393216, 3, 131105, 131072, 2, 65568, 0, 1, 32, 0, 1, -65504, 0, 0, -65503, 458752, 2, 33, 131072, 1, 65569, 131072, 1, -131039, 196608, 1, -196575, 196608, 1, -262111, 196608, 1, -327647, 196608, 1, -393183, 196608, 1, -458719, 196608, 1, -524255, 196608, 0)
+
+[node name="Spikes" parent="." index="3" instance=ExtResource("2_n0iaj")]
+position = Vector2(88, 16)
+
+[node name="Spikes2" parent="." index="4" instance=ExtResource("2_n0iaj")]
+position = Vector2(104, 16)
+
+[node name="Spikes3" parent="." index="5" instance=ExtResource("2_n0iaj")]
+position = Vector2(120, 16)
+
+[node name="Spikes4" parent="." index="6" instance=ExtResource("2_n0iaj")]
+position = Vector2(136, 16)
+
+[node name="Spikes5" parent="." index="7" instance=ExtResource("2_n0iaj")]
+position = Vector2(152, 16)
+
+[node name="Spikes7" parent="." index="8" instance=ExtResource("2_n0iaj")]
+position = Vector2(184, 16)
+
+[node name="Spikes6" parent="." index="9" instance=ExtResource("2_n0iaj")]
+position = Vector2(168, 16)
+
+[node name="Spikes8" parent="." index="10" instance=ExtResource("2_n0iaj")]
+position = Vector2(200, 16)
+
+[node name="Spikes9" parent="." index="11" instance=ExtResource("2_n0iaj")]
+position = Vector2(264, 32)
+
+[node name="Spikes10" parent="." index="12" instance=ExtResource("2_n0iaj")]
+position = Vector2(280, 32)
+
+[node name="Spikes11" parent="." index="13" instance=ExtResource("2_n0iaj")]
+position = Vector2(296, 32)
+
+[node name="Spikes12" parent="." index="14" instance=ExtResource("2_n0iaj")]
+position = Vector2(312, 32)
+
+[node name="Spikes13" parent="." index="15" instance=ExtResource("2_n0iaj")]
+position = Vector2(328, 32)
+
+[node name="Spikes14" parent="." index="16" instance=ExtResource("2_n0iaj")]
+position = Vector2(344, 32)
+
+[node name="Spikes15" parent="." index="17" instance=ExtResource("2_n0iaj")]
+position = Vector2(360, 32)
+
+[node name="Spikes16" parent="." index="18" instance=ExtResource("2_n0iaj")]
+position = Vector2(376, 32)
+
+[node name="Spikes17" parent="." index="19" instance=ExtResource("2_n0iaj")]
+position = Vector2(392, 32)
+
+[node name="Spikes18" parent="." index="20" instance=ExtResource("2_n0iaj")]
+position = Vector2(408, 32)
+
+[node name="Spikes19" parent="." index="21" instance=ExtResource("2_n0iaj")]
+position = Vector2(424, 32)
+
+[node name="Spikes20" parent="." index="22" instance=ExtResource("2_n0iaj")]
+position = Vector2(440, 32)
+
+[node name="Spikes21" parent="." index="23" instance=ExtResource("2_n0iaj")]
+position = Vector2(456, 32)
+
+[node name="Spikes22" parent="." index="24" instance=ExtResource("2_n0iaj")]
+position = Vector2(472, 32)
+
+[node name="Spikes23" parent="." index="25" instance=ExtResource("2_n0iaj")]
+position = Vector2(488, 32)
+
+[node name="Spikes24" parent="." index="26" instance=ExtResource("2_n0iaj")]
+position = Vector2(504, 32)
+
+[node name="Heart" parent="." index="27" instance=ExtResource("3_mw011")]
+position = Vector2(40, -72)
+
+[node name="Heart2" parent="." index="28" instance=ExtResource("3_mw011")]
+position = Vector2(88, -48)
+
+[node name="Heart3" parent="." index="29" instance=ExtResource("3_mw011")]
+position = Vector2(136, -72)
+
+[node name="Heart4" parent="." index="30" instance=ExtResource("3_mw011")]
+position = Vector2(192, -48)
+
+[node name="Heart5" parent="." index="31" instance=ExtResource("3_mw011")]
+position = Vector2(232, -88)
+
+[node name="Heart6" parent="." index="32" instance=ExtResource("3_mw011")]
+position = Vector2(384, -64)
+
+[node name="Heart7" parent="." index="33" instance=ExtResource("3_mw011")]
+position = Vector2(392, -8)
+
+[node name="Heart8" parent="." index="34" instance=ExtResource("3_mw011")]
+position = Vector2(472, -8)
+
+[node name="Heart9" parent="." index="35" instance=ExtResource("3_mw011")]
+position = Vector2(520, -80)
