@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://bubeuax5ony8d"]
+
+[ext_resource type="Theme" uid="uid://0dh4cmj43xf0" path="res://default_theme.tres" id="1_wi5tn"]
+[ext_resource type="Script" path="res://start_menu.gd" id="1_wm6fe"]
+
+[node name="StartMenu" type="CenterContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_wi5tn")
+script = ExtResource("1_wm6fe")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="StartGame" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(64, 16)
+layout_mode = 2
+text = "START"
+
+[node name="QuitGame" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(64, 16)
+layout_mode = 2
+text = "QUIT"
+
+[connection signal="pressed" from="VBoxContainer/StartGame" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitGame" to="." method="_on_quit_game_pressed"]
