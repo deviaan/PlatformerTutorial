@@ -5,6 +5,21 @@
 [ext_resource type="PackedScene" uid="uid://dkc6667cigtte" path="res://level_completed.tscn" id="5_b17pl"]
 [ext_resource type="PackedScene" uid="uid://rar8f808iwts" path="res://level_tile_map.tscn" id="6_uxtiv"]
 
+[sub_resource type="Animation" id="Animation_2o1rv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/StartIn/CenterContainer/StartInLabel:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Start In 3"]
+}
+
 [sub_resource type="Animation" id="Animation_fcv52"]
 resource_name = "countdown"
 length = 3.0
@@ -19,21 +34,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": ["Start In 3", "Start In 2", "Start In 1"]
-}
-
-[sub_resource type="Animation" id="Animation_2o1rv"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("CanvasLayer/StartIn/CenterContainer/StartInLabel:text")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": ["Start In 3"]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_pqb1b"]
@@ -75,6 +75,17 @@ unique_name_in_owner = true
 layout_mode = 2
 text = "Start In 3"
 
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer"]
+offset_left = 8.0
+offset_right = 136.0
+offset_bottom = 40.0
+
+[node name="LevelTimeLabel" type="Label" parent="CanvasLayer/CenterContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+vertical_alignment = 1
+
 [node name="LevelTileMap" parent="." instance=ExtResource("6_uxtiv")]
 position = Vector2(0, 8)
 
@@ -83,3 +94,5 @@ process_mode = 3
 libraries = {
 "": SubResource("AnimationLibrary_pqb1b")
 }
+
+[connection signal="next_level" from="CanvasLayer/LevelCompleted" to="." method="_on_level_completed_next_level"]
